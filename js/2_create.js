@@ -4,7 +4,7 @@ async function createTables() {
 	await db.connect();
 	await db.query(`create table evento (
 	id serial primary key,
-	nome varchar(50) unique not null)`)
+	nome varchar(50) not null)`)
 
 	await db.query(`create table participante(
 	id serial primary key,
