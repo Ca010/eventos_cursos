@@ -1,6 +1,6 @@
 const db = require('./_database')
 
-async function listData(){
+async function listData() {
     await db.connect()
     var result
 

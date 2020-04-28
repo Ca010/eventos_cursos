@@ -4,7 +4,7 @@ const client = new pg.Client({
     host: 'localhost',
     database: 'evento',
     password: '123456',
-    port:5432,
+    port: 5432,
 })
 console.log('Conectou')
 module.exports = client

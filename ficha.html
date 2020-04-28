@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <form method="POST" action="/js/_database.js"></form>
+    <form>
+
+        <title>Inscrição Evento</title>
+</head>
+
+<body>
+    <h1>Cadastro de Evento: </h1>
+    <h2>Data e Hora dos eventos</h2>
+    <ul>
+        <li>Encontro de Nodejs - Data: 25/04/2020 ás 14:00 hrs</li>
+        <li> Encontro de Postgres - Data: 27/06/2020 ás 14:00 hrs</li>
+    </ul>
+    <div>
+        <label for="nome ">Selecione o evento:</label>
+        <input type="hidden" id="evento " required/>
+        <select name="evento " id="evento ">
+            <option value="Encontro de Nodejs "> Encontro de Nodejs</option>
+            <option value="Encontro de Postgres "> Encontro de Postgres</option>
+        </select>
+    </div>
+    <br><br><br>
+    <div>
+        <label for="nome ">Participante:</label>
+        <input type="text " id="participante" placeholder="Nome Completo" required/>
+    </div>
+    <br><br>
+    <input type="submit" name="enviar" value="Enviar">
+</body>
+</form>
+<script>
+    function enviar() {
+        let evento = documet.getElementById("evento").value;
+        let participante = document.getElementById("participante").value;
+
+        if (evento.value != "");
+        else {
+            (participante.value != "");
+
+            alert('Cadastro realizado com sucesso' + evento + participante);
+
+        }
+    }
+</script>
+
+</html>
